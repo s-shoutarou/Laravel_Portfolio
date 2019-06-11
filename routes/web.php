@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/','HomeController@index');
+Route::get('/','CompanyController@index');
 
-Route::get('companies/{company}','ConmpanyController@index');
+Route::get('companies/{id}','ConmpanyController@detail')->name('companies.detail');
 
-Route::get('companies/{company}/edit','ConmpanyController@showeditform');
-Route::post('companies/{company}/edit','ConmpanyController@edit');
+Route::get('companies/{id}/edit','ConmpanyController@showeditform');
+Route::post('companies/{id}/edit','ConmpanyController@edit');
 

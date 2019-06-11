@@ -24,7 +24,10 @@ class CreateCompaniesTable extends Migration
             $table->string('badpoint2');
             $table->string('badpoint3');
             $table->string('reason');
+            $table->string('platform');
             $table->string('myvalue');
+            $table->string('address');
+            $table->string('url');
             $table->datetime('meetingday');
             $table->timestamps();
         });
