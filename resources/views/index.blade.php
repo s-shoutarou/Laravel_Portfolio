@@ -1,6 +1,6 @@
-@extends('template/template')
+@component('components.head')
+@endcomponent
 
-@section('content1')
 <section class="user">
   <ul>
     <li class = 'name'><span></span></li>
@@ -9,10 +9,10 @@
     <li class = 'oinori-count'><span></span></li>
   </ul>
 </section>
-@endsection
 
 
-@section('content2')
+
+
 <section class="companies">
   @foreach($companies as $company)
   <!--企業名をDBから引っこ抜いてループして取得-->
@@ -21,6 +21,3 @@
     </a>
   @endforeach
 </section>
-@endsection
-
-

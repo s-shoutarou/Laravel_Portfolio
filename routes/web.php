@@ -13,7 +13,7 @@
 
 Route::get('/','CompanyController@index');
 
-Route::get('companies/{id}','ConmpanyController@detail')->name('companies.detail');
+Route::get('companies/{id}','CompanyController@detail')->name('companies.detail');
 
 Route::get('companies/{id}/edit','ConmpanyController@showeditform');
 Route::post('companies/{id}/edit','ConmpanyController@edit');

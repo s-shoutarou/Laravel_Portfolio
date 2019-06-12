@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Company;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CompanyController extends Controller
 {
@@ -14,7 +15,8 @@ class CompanyController extends Controller
   ]);
   }
 
-  public function detail(){
-    
+  public function detail($id){
+    $detail = DB::table('companies')->where('id',$id)->first();
+    return view('detail',['detail'=>$detail]);
   }
 }
