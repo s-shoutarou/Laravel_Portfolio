@@ -3,11 +3,23 @@
 
 
 
-<section class="companies">
-  @foreach($detail as $key=>$value)
+<section id="companies">
   <!--企業情報を取得して全表示-->
-<span class="company-detail">{{$value}}</span>
+  <!--idは表示しない-->
+  <!--created_atとupdated_atも表示しない-->
+  @foreach($detail as $key=>$value)
+    @if($key == 'id')
+      @continue
+    @endif
+
+
+    @if($key == 'created_at')
+      @break
+    @endif
+
+<span class="company-detail" v-on:click="show = !show">{{$value}}</span>
   @endforeach
 </section>
 
 
+@component('components.footer')
