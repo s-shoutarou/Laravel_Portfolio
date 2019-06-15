@@ -15,15 +15,16 @@
     </head>
     <body>
     <!--共通ヘッダー-->
-    <nav class="navbar navbar-dark bg-primary">
   <!-- Navbar content -->
-    <header class="links">
+    <header class="links l-header">
+      <nav class="navbar navbar-dark bg-primary c-head">
       <a class="navbar-brand">転活サポーター</a>
-      <ul>
-      <li class="nav-item"><a class="nav-item">HOME</a></li>
-      <li class="nav-item"><a class="nav-item">USER</a></li>
-      <li class="nav-item"><a class="nav-item">LOGIN</a></li>
+      <ul class = "c-head__ul">
+      <li class="c-head__list"><a class="c-head__link">HOME</a></li>
+      <li class="c-head__list"><a class="c-head__link">USER</a></li>
+      <li class="c-head__list"><a class="c-head__link">LOGIN</a></li>
       </ul>
+      </nav>
     </header>
-</nav>
+
 

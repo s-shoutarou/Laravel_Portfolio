@@ -20,7 +20,7 @@ mix
 'public/css/app.css'
 )
 .js([
-  'resources/js/assets/app.js'
+  'resources/js/app.js'
 ],
 'public/js/app.js'
 )

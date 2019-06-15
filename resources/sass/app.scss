@@ -8,3 +8,21 @@
 @import '~bootstrap/scss/bootstrap';
 
 
+.c-head{
+  &__ul{
+    display: flex;
+  }
+  &__list {
+    list-style: none;
+    display: block;
+    margin: 5px 15px;
+  }
+}
+.c-companies{
+  width: 980px;
+  text-align: center;
+  margin: 0 auto;
+  &__detail{
+    display: block;
+  }
+}
